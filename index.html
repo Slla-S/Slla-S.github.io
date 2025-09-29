@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLureColor - Генератор цветовых палитр</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logoALL.png" type="image/png">
+</head>
+<body class="light-theme">
+    <div class="theme-toggle">
+        <button id="theme-switcher">Тёмная тема</button>
+    </div>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="logoALL.png" alt="ALLureColor Logo" class="logo">
+            <h1>ALLureColor</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-tab="home">Главная</a></li>
+                <li><a href="#" class="nav-link" data-tab="generator">Генератор палитр</a></li>
+                <li><a href="#" class="nav-link" data-tab="random">Случайный цвет</a></li>
+                <li><a href="#" class="nav-link" data-tab="ideas">Идеи палитр</a></li>
+                <li><a href="#" class="nav-link" data-tab="saved">Мои палитры</a></li>
+                <li><a href="#" class="nav-link" data-tab="about">О нас</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <!-- Главная -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <h2>Раскройте магию цвета в каждом проекте</h2>
+                <p>ALLureColor — это ваш проводник в мир гармонии и стиля, где каждая палитра становится шедевром, а каждый оттенок рассказывает свою историю</p>
+                
+                <div class="color-theory-visual">
+                    <img src="free-icon-color-wheel-1372997.png" alt="Цветовой круг" class="theory-image">
+                    <p>Изучайте гармонию цвета через классический цветовой круг</p>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <img src="free-icon-paint-palette-686155.png" alt="Палитра">
+                        </div>
+                        <h3>Генерация палитр</h3>
+                        <p>Позвольте алгоритмам создать для вас уникальные цветовые симфонии, которые затронут душу</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <img src="free-icon-save-button-6807756.png" alt="Сохранение">
+                        </div>
+                        <h3>Сохранение вдохновения</h3>
+                        <p>Сохраняйте свои цветовые находки в личной коллекции, чтобы никогда не упустить момент гениальности</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <img src="free-icon-inspired-8759469.png" alt="Идеи">
+                        </div>
+                        <h3>Источник идей</h3>
+                        <p>Погрузитесь в океан готовых решений, где каждая палитра — это новая глава вашего творчества</p>
+                    </div>
+                </div>
+                
+                <div class="golden-ratio">
+                    <img src="free-icon-golden-ratio-1958394.png" alt="Золотое сечение в дизайне">
+                    <p>Создавайте гармоничные композиции, используя принципы золотого сечения</p>
+                </div>
+                
+                <button class="cta-button" data-tab="generator">Погрузиться в творчество</button>
+            </div>
+        </section>
+
+        <!-- Генератор палитр -->
+        <section id="generator" class="tab-content">
+            <h2>Мастерская цветовых решений</h2>
+            <p>Откройте для себя безграничные возможности цветовых комбинаций. Наш генератор создаёт сбалансированные палитры, 
+               где каждый цвет идеально дополняет другой, образуя визуальную гармонию.</p>
+            
+            <div class="color-harmony">
+                <p>Используйте различные схемы гармонии: комплементарную, аналоговую, триадную и другие</p>
+            </div>
+            
+            <div class="controls">
+                <button id="generate-btn" class="generate-button">Создать новую палитру</button>
+            </div>
+            
+            <div class="palette-container">
+                <div class="color-box">
+                    <div class="color-preview" id="color-1"></div>
+                    <span class="color-code" id="code-1">#FFFFFF</span>
+                </div>
+                <div class="color-box">
+                    <div class="color-preview" id="color-2"></div>
+                    <span class="color-code" id="code-2">#FFFFFF</span>
+                </div>
+                <div class="color-box">
+                    <div class="color-preview" id="color-3"></div>
+                    <span class="color-code" id="code-3">#FFFFFF</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="save-palette" class="action-btn">Сохранить для будущих проектов</button>
+            </div>
+
+            <div class="palette-description">
+                <p>Эта палитра готова стать основой вашего следующего творческого проекта. Каждый цвет играет свою особую роль 
+                   в создании целостного визуального образа.</p>
+            </div>
+        </section>
+
+        <!-- Случайный цвет -->
+        <section id="random" class="tab-content">
+            <h2>Магия случайного вдохновения</h2>
+            <p>Позвольте судьбе руководить вашей палитрой! Каждое нажатие кнопки — это встреча с неизведанным оттенком, 
+               который может стать тем самым акцентом, что преобразит весь ваш проект.</p>
+            
+            <div class="controls">
+                <button id="generate-single" class="generate-button">Прикоснуться к хаосу творчества</button>
+            </div>
+            
+            <div class="single-color-container">
+                <div class="color-preview-large" id="single-color"></div>
+                <span class="color-code-large" id="single-code">#FFFFFF</span>
+                <h3>Этот цвет ждёт, чтобы рассказать свою историю в вашем дизайне</h3>
+            </div>
+
+            <div class="random-features">
+                <h3>Почему случайность — это искусство?</h3>
+                <ul>
+                    <li>Каждый клик — это уникальное цветовое открытие</li>
+                    <li>Выходите за рамки привычных цветовых решений</li>
+                    <li>Мгновенное вдохновение для творческого блокирования</li>
+                    <li>Обнаружьте оттенки, о существовании которых не подозревали</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Идеи палитр -->
+        <section id="ideas" class="tab-content">
+            <h2>Сокровищница цветовых решений</h2>
+            <p>Окунитесь в мир готовых гармоний, где каждая палитра — это результат вдохновения и тонкого цветового чутья. 
+               Эти сочетания прошли проверку временем и готовы стать основой ваших будущих шедевров.</p>
+            
+            <div class="color-psychology">
+                <img src="pcix_color.png" alt="Психология цвета">
+                <p>Учитывайте психологическое воздействие цветов при создании дизайна</p>
+            </div>
+            
+            <div class="ideas-grid" id="ideas-container">
+                <!-- Палитры будут загружены через JavaScript -->
+            </div>
+        </section>
+
+        <!-- Мои палитры -->
+        <section id="saved" class="tab-content">
+            <h2>Моя коллекция вдохновения</h2>
+            <p>Это ваше личное пространство, где живут все цветовые находки и озарения. Здесь каждая сохранённая палитра — 
+               как страница дневника творца, готовая рассказать свою историю в новом проекте.</p>
+            
+            <div class="design-principles">
+                <img src="heart_icon.png" alt="Принципы дизайна">
+                <p>Применяйте сохранённые палитры с учётом основных принципов дизайна</p>
+            </div>
+            
+            <div class="saved-palettes" id="saved-palettes-container">
+                <div class="empty-state">
+                    <p>Ваша палитра ждёт своего художника</p>
+                    <p>Это пространство готово наполниться цветами вашего воображения. Создайте первую палитру — 
+                       и начнётся магия творчества!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section id="about" class="tab-content">
+            <img src="logoALL.png" alt="ALLureColor Logo" class="logo">
+            <h2>ALLureColor — там, где рождается гармония цвета</h2>
+            
+            <div class="color-theory-basics">
+                <img src="painting.png" alt="Основы теории цвета">
+                <p>Изучайте основы теории цвета для создания профессиональных дизайнов</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Наше предназначение</h3>
+                    <p>ALLureColor — это не просто инструмент, а проводник в мир цветовой гармонии. Мы верим, что каждый оттенок 
+                       имеет свою душу, а правильное сочетание цветов может говорить с сердцем зрителя без единого слова.</p>
+                    
+                    <h3>Для тех, кто творит красоту</h3>
+                    <p>Наш инструмент создан для художников цифровой эпохи — дизайнеров, мечтающих визуализировать эмоции, 
+                       разработчиков, стремящихся оживить интерфейсы, и всех, кто видит мир через призму эстетики и гармонии.</p>
+                    
+                    <h3>Путешествие в мир цвета</h3>
+                    <ul>
+                        <li>Дайте волю воображению — создавайте палитры, которые станут голосом вашего бренда</li>
+                        <li>Сохраняйте моменты озарения — ваши цветовые находки ждут своего звёздного часа</li>
+                        <li>Откройте сокровищницу вдохновения — изучайте палитры, рождённые в творческих порывах</li>
+                        <li>Превращайте хаос красок в упорядоченную гармонию — находите идеальные сочетания</li>
+                    </ul>
+
+                    <div class="color-inspiration">
+                        <img src="free-icon-golden-ratio-1958394.png" alt="Источники вдохновения">
+                        <p>Находите вдохновение в окружающем мире — природе, искусстве и архитектуре</p>
+                    </div>
+
+                    <h3>"Цвет — это клавиша; глаз — молоточек; душа — многострунный рояль."</h3>
+                    <h3>Василий Кандинский</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
